@@ -1,13 +1,14 @@
 import { llm } from "../config/groq.js";
 import { chatHistory } from "../memory/memory.js";
 import { calculator } from "../tools/calculator.js";
+import { appOpen } from "../tools/appOpen.js";
 
 export async function llmInvoke(userInput) {
   chatHistory.push({
     role: "user",
     content: userInput
   });
-  const tools = [calculator];
+  const tools = [calculator, appOpen];
   const toolMap = {};
   for (const tool of tools) {
     toolMap[tool.name] = tool;

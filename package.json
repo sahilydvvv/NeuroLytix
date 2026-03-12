@@ -14,7 +14,9 @@
     "@langchain/core": "^1.1.31",
     "@langchain/groq": "^1.1.4",
     "dotenv": "^17.3.1",
+    "duck-duck-scrape": "^2.2.7",
     "langchain": "^1.2.30",
+    "open": "^11.0.0",
     "zod": "^4.3.6"
   }
 }
